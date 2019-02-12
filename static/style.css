@@ -129,6 +129,12 @@ table {
     }
 }
 
+@media (min-width: 400px) {
+.navbar-brand {
+    float: left;
+    padding: 15px 15px;
+}
+}
 
 @media (min-width: 1400px) {
 .container {
