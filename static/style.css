@@ -116,12 +116,11 @@ table {
     border: 1px solid;
 }
 
-@media (min-width: 768px) {}
-.navbar-collapse.collapse {
-    display: block!important;
-    height: 5em;
-    padding-bottom: 0;
-    overflow: visible!important;
+@media (min-width: 400px) {
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+    text-size-adjust: 250%;
 }
 }
 
