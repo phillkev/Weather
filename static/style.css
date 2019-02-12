@@ -113,19 +113,22 @@ table {
     border: 1px solid;
 }
 
-/* @media (min-width: 400px) {
+@media (min-width: 400px) {
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin-right: 0;
     margin-left: 0;
     text-size-adjust: 300%;
-} */
+    padding-top: .25em;
+    }
+}
 
-@media (min-width: 400px) {
+
+/* @media (min-width: 400px) {
 .navbar-nav>li {
     padding-top: .25em;
     text-size-adjust: 300%;
 }
-}
+} */
 
 @media (min-width: 400px) {
 .navbar-header img#brand {
