@@ -118,6 +118,7 @@ table {
     margin-right: 0;
     margin-left: 0;
     text-size-adjust: 300%;
+    -webkit-text-size-adjust: 300%; 
     padding-top: .20em;
     }
 }
