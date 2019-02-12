@@ -99,9 +99,6 @@ table {
     padding-bottom: 2em;
 }
 
-
-
-
 .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, 
 .navbar-brand>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, 
 .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
@@ -120,9 +117,16 @@ table {
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin-right: 0;
     margin-left: 0;
-    text-size-adjust: 250%;
+    text-size-adjust: 250%;}
+
+.navbar-header img#brand {
+        margin-left: 1em;
+        max-width:3.9em;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
-}
+
 
 @media (min-width: 1400px) {
 .container {
