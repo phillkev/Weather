@@ -125,15 +125,7 @@ table {
     }
 }
 
-
-/* @media (min-width: 400px) {
-.navbar-nav>li {
-    padding-top: .25em;
-    text-size-adjust: 300%;
-}
-} */
-
-/* @media (min-width: 400px) {
+@media (min-width: 400px) {
 .navbar-header img#brand {
         margin-left: 1em;
         max-width:3.9em;
@@ -141,7 +133,7 @@ table {
         padding-right: 0px;
         height: auto;
     }
-} */
+}
 
 /* @media (min-width: 400px) {
 .navbar-brand {
