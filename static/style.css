@@ -116,12 +116,13 @@ table {
     border: 1px solid;
 }
 
-
-@media (min-width: 360px) {
-.navbar-default {
-    min-height: 4em;
-
-    }
+@media (min-width: 768px) {}
+.navbar-collapse.collapse {
+    display: block!important;
+    height: 5em;
+    padding-bottom: 0;
+    overflow: visible!important;
+}
 }
 
 @media (min-width: 1400px) {
