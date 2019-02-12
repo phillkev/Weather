@@ -117,6 +117,13 @@ table {
 }
 
 
+@media (min-width: 768px) {
+.navbar-default {
+    min-height: 4em;
+    
+    }
+}
+
 @media (min-width: 1400px) {
 .container {
       width: 1370px;
