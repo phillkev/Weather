@@ -120,13 +120,14 @@ table {
         margin-right: 0;
         margin-left: 0;
     /* for Edge Chrome and Safari */
-        -webkit-text-size-adjust: 200%;
+        -webkit-text-size-adjust: 300%;
     /* for Chrome Opera and Edge */
         text-size-adjust: 300%;
         padding-top: .15em;
         }
     }
-    
+
+
 @media (max-width: 414px) {
     .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
         padding-top: .25em;
