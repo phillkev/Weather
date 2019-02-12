@@ -118,7 +118,9 @@ table {
     margin-right: 0;
     margin-left: 0;
     text-size-adjust: 250%;}
+}
 
+@media (min-width: 400px) {
 .navbar-header img#brand {
         margin-left: 1em;
         max-width:3.9em;
