@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Weather Analysis</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+  </style>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img src="{{url_for('static', filename='images/cant_hear_you.JPG')}}" alt="Can't Hear You" class="navbar-brand" style="margin-left: 1em; max-width:45px; padding-left: 0px; padding-right: 0px;">
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Latitude<span class="sr-only">(current)</span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="{{url_for('max_temp')}}">Max Temperature</a></li>
+                <li><a href="{{url_for('humidity')}}">Humidity</a></li>
+                <li><a href="{{url_for('wind_speed')}}">Wind Speed</a></li>
+                <li><a href="{{url_for('cloudiness')}}">Cloudiness</a></li>
+            </ul>
+          </li>
+          <li><a href="{{url_for('comparison')}}">Comparison</a></li>
+          <li><a href="{{url_for('data')}}">Data</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Our rows function in containers (grid created). -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Summary: Latitude vs. X</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img src="{{url_for('static', filename='images/Latitude_v_Temp.png')}}" alt="Latitude_v_Temp" class="pull-left" style="padding-right: 1em; max-width:500px;">
+            <p>
+                As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth.
+                There is no strong relationship between latitude and cloudiness. However, it is interesting to see that a strong band of cities sit have 0%, 20%, 40%, 75%, and 90% cloudiness. As expected this does change each day the data is pulled.
+                There is no strong relationship between closeness to the equater and wind speed. Though 20 degrees latitude does appear to be a wind speed low point, with wind speed growing the further south and north you go from this latitude. This may be related to the eliptical rotation defined by the Tropic of Cancer and Tropic of Capricorn or just current weather conditions. This would be an interesting data point to review over the course of a year or years.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Visualizations</h3>
+          </div>
+          <a href="{{url_for('comparison')}}">
+            <div class="col-md-6">
+              <img src="{{url_for('static', filename='images/Latitude_v_Temp.png')}}" alt="Latitude_v_Temp" style="max-width:200px; min-width:150px;">
+            </div>
+            <div class="col-md-6">
+              <img src="{{url_for('static', filename='images/Latitude_v_Humidity.png')}}" alt="Latitude_v_Humidity" style="max-width:200px; min-width:150px;">
+            </div>
+            <div class="col-md-6">
+              <img src="{{url_for('static', filename='images/Latitude_v_Wind_Speed.png')}}" alt="Latitude_v_Wind_Speed" style="max-width:200px; min-width:150px;">
+            </div>
+            <div class="col-md-6">
+              <img src="{{url_for('static', filename='images/Latitude_v_Cloudiness.png')}}" alt="Latitude_v_Cloudiness" style="max-width:200px; min-width:150px;">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>  

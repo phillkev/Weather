@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Latitude vs. Wind Speed</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/style.css">
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+  </style>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#"> -->
+              <img src="static/images/cant_hear_you.JPG" alt="Can't Hear You" class="navbar-brand" style="margin-left: 1em; max-width:45px; padding-left: 0px; padding-right: 0px;">
+              <!-- </a> -->
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Latitude<span class="sr-only">(current)</span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="max_temp.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="wind_speed.html">Wind Speed</a></li>
+                  <li><a href="cloudiness.html">Cloudiness</a></li>
+                </ul>
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="convertcsv.html">Data</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+  </nav>    <!-- Our rows function in containers (grid created). -->
+  <!-- Our rows function in containers (grid created). -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Latitude vs. Wind Speed</h1>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+          <img src="static/images/Latitude_v_Wind_Speed.png" alt="Latitude_v_Wind_Speed">
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+          <h4>
+            There is no strong relationship between closeness to the equater and wind speed. Though 20 degrees latitude does appear to be a wind speed low point, with wind speed growing the further south and north you go from this latitude. This may be related to the eliptical rotation defined by the Tropic of Cancer and Tropic of Capricorn or just current weather conditions. This would be an interesting data point to review over the course of a year or years.
+          </h4>
+       </div>
+    </div>
+  </div>
+</body>
+</html>  
