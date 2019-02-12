@@ -65,7 +65,7 @@ table {
 
 .navbar-header img#brand {
     margin-left: 1em;
-    width:2.5em;
+    max-width:2.5em;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -113,7 +113,7 @@ table {
     border: 1px solid;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin-right: 0;
     margin-left: 0;
@@ -125,7 +125,7 @@ table {
     }
 }
 
-@media (min-width: 400px) {
+@media (max-width: 415px) {
 .navbar-header img#brand {
         margin-left: 1em;
         max-width:3.9em;
