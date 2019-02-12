@@ -28,7 +28,7 @@ p {
 }
 
 img {
-    width: "100%";
+    width: 100%;
     height: auto;
     padding-bottom: 1em;
     margin: 0 
@@ -63,11 +63,11 @@ table {
     border-radius: .5em;
 }
 
-.navbar-header img {
+.navbar-header img#brand {
     margin-left: 1em;
-    max-width:"45px";
-    padding-left: "0px";
-    padding-right: "0px";"
+    max-width:45px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .container-fluid {
