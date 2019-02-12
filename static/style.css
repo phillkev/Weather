@@ -120,9 +120,9 @@ table {
         margin-right: 0;
         margin-left: 0;
     /* for Edge Chrome and Safari */
-        -webkit-text-size-adjust: 300%;
+        /* -webkit-text-size-adjust: 300%; */
     /* for Chrome Opera and Edge */
-        /* text-size-adjust: 300%; */
+        text-size-adjust: 300%;
         padding-top: .15em;
         }
     }
