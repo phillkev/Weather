@@ -65,7 +65,7 @@ table {
 
 .navbar-header img#brand {
     margin-left: 1em;
-    max-width:45px;
+    max-width:3.9em;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -113,11 +113,18 @@ table {
     border: 1px solid;
 }
 
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin-right: 0;
     margin-left: 0;
-    text-size-adjust: 250%;}
+    text-size-adjust: 300%;
+} */
+
+@media (min-width: 400px) {
+.navbar-nav>li {
+    padding-top: .25em;
+    text-size-adjust: 300%;
+}
 }
 
 @media (min-width: 400px) {
@@ -133,7 +140,7 @@ table {
 @media (min-width: 400px) {
 .navbar-brand {
     float: left;
-    padding: 15px 15px;
+    padding: 1em 1em;
 }
 }
 
