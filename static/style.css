@@ -117,10 +117,10 @@ table {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 360px) {
 .navbar-default {
     min-height: 4em;
-    
+
     }
 }
 
