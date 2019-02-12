@@ -63,6 +63,12 @@ table {
     border-radius: .5em;
 }
 
+.navbar-header img {
+    margin-left: 1em;
+    max-width:"45px";
+    padding-left: "0px";
+    padding-right: "0px";"
+}
 
 .container-fluid {
     padding-right: 0px;
@@ -92,6 +98,9 @@ table {
     float: left;
     padding-bottom: 2em;
 }
+
+
+
 
 .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, 
 .navbar-brand>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, 
