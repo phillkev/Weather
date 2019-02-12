@@ -113,19 +113,28 @@ table {
     border: 1px solid;
 }
 
-@media (max-width: 768px) {
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-    margin-right: 0;
-    margin-left: 0;
-/* for Edge Chrome and Safari */
-    -webkit-text-size-adjust: 200%;
-/* for Chrome Opera and Edge */
-    text-size-adjust: 300%;
-    padding-top: .15em;
-    }
-}
 
-@media (max-width: 415px) {
+
+@media (max-width: 768px) {
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+        margin-right: 0;
+        margin-left: 0;
+    /* for Edge Chrome and Safari */
+        -webkit-text-size-adjust: 200%;
+    /* for Chrome Opera and Edge */
+        text-size-adjust: 300%;
+        padding-top: .15em;
+        }
+    }
+    
+@media (max-width: 414px) {
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+        padding-top: .25em;
+        }
+    }
+        
+
+@media (max-width: 414px) {
 .navbar-header img#brand {
         margin-left: 1em;
         max-width:3.9em;
