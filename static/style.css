@@ -27,6 +27,10 @@ p {
     font-family: 'Arial Narrow Bold', Arial, sans-serif;
 }
 
+tr#odd {
+    background-color: #ffffffe1;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -112,6 +116,7 @@ table {
 .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
     border: 1px solid;
 }
+
 
 
 @media (min-width: 768px) {
