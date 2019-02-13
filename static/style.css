@@ -126,7 +126,27 @@ table {
 .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, 
 .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
     font-size: 1.6vw;
+    padding: .2vw;
 }
+
+
+@media (max-width: 993px) and (min-width: 800px) {
+    .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, 
+    .navbar-brand>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, 
+    .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+        font-size: 1.4vw;
+    }
+
+        
+    .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, 
+    .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, 
+    .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+        font-size: 1.3vw;
+    }
+
+
+}
+
 
 
 @media (max-width: 766px) {
@@ -145,23 +165,9 @@ table {
         font-family: 'Arial Narrow Bold', Arial, sans-serif;
     }
 
-    .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, 
-    .navbar-brand>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, 
-    .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
-        font-size: 1.4vw;
-    }
-
-        
-    .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, 
-    .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, 
-    .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
-        font-size: 1.3vw;
-    }
-
-
 }
 
-@media (max-width: 440px) {
+@media (max-width: 600px) {
     .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, 
     .navbar-brand>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, 
     .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
@@ -175,6 +181,7 @@ table {
         font-size: 1.7vw;
     }
 }
+
 
 
 @media (min-width: 1400px) {
