@@ -44,11 +44,6 @@ table {
     margin: 0 auto !important;
 }
 
-/* .navbar-brand {
-    padding: .1vw 1vw;
-    height: auto
-} */
-
 
 .navbar-default {
     margin-bottom: 0px;
@@ -70,10 +65,6 @@ table {
     border-radius: .5vw;
 }
 
-/* .navbar-nav>li>a {
-    padding-top: 1.75vw;
-    padding-bottom: 1.75vw;
-} */
 
 .navbar-default .navbar-nav>li>a {
     font-size: 1.8vw;
@@ -137,17 +128,6 @@ table {
     font-size: 1.6vw;
 }
 
-table.table-fit {
-    width: auto !important;
-    table-layout: auto !important;
-}
-table.table-fit thead th, table.table-fit tfoot th {
-    width: auto !important;
-}
-table.table-fit tbody td, table.table-fit tfoot td {
-    width: auto !important;
-}
-
 
 @media (max-width: 766px) {
     .navbar-default .navbar-nav>li>a {
@@ -164,9 +144,37 @@ table.table-fit tbody td, table.table-fit tfoot td {
         font-size: 2.5vw;
         font-family: 'Arial Narrow Bold', Arial, sans-serif;
     }
+
+    .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, 
+    .navbar-brand>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, 
+    .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+        font-size: 1.4vw;
+    }
+
+        
+    .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, 
+    .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, 
+    .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+        font-size: 1.3vw;
+    }
+
+
 }
 
+@media (max-width: 440px) {
+    .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, 
+    .navbar-brand>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, 
+    .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+        font-size: 1.8vw;
+    }
 
+        
+    .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, 
+    .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, 
+    .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+        font-size: 1.7vw;
+    }
+}
 
 
 @media (min-width: 1400px) {
