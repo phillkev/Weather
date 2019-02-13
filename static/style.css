@@ -13,17 +13,18 @@ h1 {
 
 h3 {
     text-align: center;
+    font-size: 3vw;
 }
 
 h4 {
     text-align: center;
-    padding-bottom: 3vw;
+    padding-bottom: 2.5vw;
 }
 
 p {
     margin-left: 2vw;
     margin-right: 2vw;
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-family: 'Arial Narrow Bold', Arial, sans-serif;
 }
 
@@ -63,10 +64,21 @@ table {
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     margin-left: .85vw;
     margin-right: .85vw;
-    font-size: 2.5vw;
+    font-size: 3.1vw;
     font-family: 'Ubuntu', sans-serif;
     background-color: #a8b5eb;
     border-radius: .5vw;
+}
+
+/* .navbar-nav>li>a {
+    padding-top: 1.75vw;
+    padding-bottom: 1.75vw;
+} */
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 1.8vw;
+    padding-top: 1.69vw;
+    padding-bottom: 1.69vw;
 }
 
 .navbar-header img#brand {
@@ -108,7 +120,7 @@ table {
 .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, 
 .navbar-brand>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, 
 .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
-    font-size: 1.15vw;
+    font-size: 1.8vw;
     border-bottom: .15em solid;
     border-top: .07em solid;
 }
@@ -119,14 +131,22 @@ table {
     border: .1em solid;
 }
 
-
-@media (min-width: 768px) {
-    .navbar-collapse#bs-example-navbar-collapse-1 {
-        font-size: 2vw
-   }
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, 
+.table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, 
+.table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+    font-size: 1.6vw;
 }
 
-        /* inline-size: 150% */
+@media (max-width: 766px) {
+    .navbar-default .navbar-nav>li>a {
+        font-size: 3vw;
+    },    
+    .navbar-collapse#navbar-collapse-1>a .navbar-nav>a {
+        font-size: 3.5vw;
+    }
+    }
+
+
 
 
 @media (min-width: 1400px) {
