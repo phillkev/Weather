@@ -114,6 +114,13 @@ table {
 }
 
 
+@media (max-width: 768px) {
+    .navbar-collapse#bs-example-navbar-collapse-1 {
+        /* font-size-adjust: 150%; */
+        inline-size: 150%
+    }
+}
+
 /* @media (max-width: 768px) {
     .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
         margin-right: 0;
