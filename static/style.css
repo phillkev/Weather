@@ -43,10 +43,10 @@ table {
     margin: 0 auto !important;
 }
 
-.navbar-brand {
+/* .navbar-brand {
     padding: .1vw 1vw;
     height: auto
-}
+} */
 
 
 .navbar-default {
@@ -71,10 +71,9 @@ table {
 
 .navbar-header img#brand {
     margin-left: 1vw;
-    max-width:3.5em;
-    padding-top: .1vw
-    padding-left: 0px;
-    padding-right: 0px;
+    max-width:3em;
+    padding: .1vw;
+    height: auto;
 }
 
 .container-fluid {
@@ -110,20 +109,20 @@ table {
 .navbar-brand>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, 
 .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
     font-size: 1.15vw;
-    border-bottom: .15vw solid;
-    border-top: .07vw solid;
+    border-bottom: .15em solid;
+    border-top: .07em solid;
 }
 
 .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, 
 .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, 
 .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
-    border: .07px solid;
+    border: .1em solid;
 }
 
 
 @media (min-width: 768px) {
     .navbar-collapse#bs-example-navbar-collapse-1 {
-        font-size-adjust: 150%;
+        font-size: 2vw
    }
 }
 
