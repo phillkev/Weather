@@ -234,7 +234,13 @@ my fonts looked good on all of these devices */
     }
 }
 
-/* These last few media queries were to improve the display for larger screens */ 
+/* These last few media queries were to improve the display for larger screens 
+I realized that it would actually be better to use a single container media query
+and set the width using something like width: 80vw but this triggered the need
+to reformat all my tweaks in the other media queries and I just needed to turn the 
+assignment in.  But the next phase of development would be to remove these media 
+queries and leverage vw instead of px to improve the consistency of the webpage 
+and potentially reduce/eliminate even more of my css media based styles */ 
 
 @media (min-width: 1400px) {
 .container {
